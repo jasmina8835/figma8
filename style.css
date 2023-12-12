@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 5%;
+}
+
+/* ==============Start Header============== */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    gap: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul span{
+    border-bottom: 4px solid #000000;
+    border-radius: 3px;
+}
+
+button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    background-blend-mode: overlay;
+    color: #000000;
+    background: linear-gradient(90deg, rgba(221, 211, 239, 0.55) 0%, #FDD9FF 36.58%, #B2E0FE 87.8%);
+}
+
+header i{
+    font-size: 30px;
+    font-weight: 30px;
+    color: #000;
+    display: none;
+}
+
+/* =============Header End=============== */
+
+/* ============Start Hero================ */
+
+.hero{
+    width: 100%;
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_left{
+    width: 50%;
+}
+
+.hero_left h1{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 55.1px;
+    font-weight: 500px;
+}
+
+.hero_left p{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 50px 0;
+}
+
+.btns{
+    display: flex;
+    gap: 30px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 1px solid grey;
+    background-color: #fff;
+}
+
+.hero_right{
+    width: 50%;
+}
+
+/* =============Hero End================== */
+
+/* =============Start Main================ */
+
+main{
+    height: 340px;
+    padding: 2% 10% 5% 5%;
+    background-color: #000000;
+}
+
+.main_child{
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =============Main End================== */
+
+/* =============Start Cards=============== */
+
+.cards{
+    gap: 10px;
+    padding: 5%;  
+    margin-top: -250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_1{
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgb(185, 185, 185);
+}
+
+.text{
+    display: flex;
+    gap: 10px;
+}
+
+.text i{
+    color: #F8B84E;
+}
+
+.text2{
+   gap: 70px;
+}
+
+.text2 p i{
+   color: #6BD17B;
+}
+
+.btn2{
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+/* =============Cards End================= */
+
+.texts{
+    padding: 5%;
+}
+
+.texts a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* =============Start Section============= */
+
+section{
+    text-align: center;
+    background: linear-gradient(90deg, rgba(221, 211, 239, 0.55) 0.31%, #F1E1F2 40.28%, rgba(220, 225, 246, 0.71) 60.06%, rgba(174, 224, 255, 0.13) 97.93%);
+
+    padding: 5%;
+}
+
+.submit{
+    color: #fff;
+    background-color: #000;
+}
+
+input{
+    width: 400px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* =============Section End=============== */
+
+/* =============Start Footer============== */
+
+footer{
+    padding: 5%;
+}
+
+.footer_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_bottom{
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+    gap: 30px;
+}
+
+/* ==============Footer End=============== */
+
+/* ==============Start Media============== */
+
+@media (max-width: 1286px){
+    .main_child img{
+        width: 250px;
+    }
+
+    .hero_right img{
+        width: 600px;
+    }
+}
+
+@media (max-width: 1244px){
+    .hero_left h1{
+        width: 600px;
+        font-size: 45px;
+        font-weight: 400px;
+    }
+}
+
+@media (max-width: 1220px){
+    .main_child img{
+        width: 230px;
+    }
+}
+
+@media (max-width: 1224px){
+    .main_child img{
+        width: 210px;
+    }
+
+    .card_1{
+        width: 350px;
+    }
+
+    .card_1 img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1120px){
+    .hero_right img{
+        width: 500px;
+    }
+
+    .hero_left p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1162px){
+    .main_child img{
+        width: 190px;
+    }
+}
+
+@media (max-width: 1058px){
+    .card_1 .btn2{
+        display: none;
+    }
+}
+
+@media (max-width: 1019px){
+    .main_child img{
+        width: 160px;
+    }
+}
+
+@media (max-width: 964px){
+    .hero_left{
+        padding: 5% 0;
+    }
+
+    .hero_left h1{
+        font-size: 58.06px;
+        font-weight: 500;
+    }
+
+    .hero_left p{
+        font-size: 19.38px;
+    }
+
+    .hero_left .btn{
+        display: none;
+    }
+
+    .hero_right img{
+        display: none;
+    }
+}
+
+@media (max-width: 993px){
+    header ul{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 904px){
+    .main_child img{
+        width: 150px;
+    }
+}
+
+@media (max-width: 900px){
+    .cards{
+        margin-top: -100px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 871px){
+    main{
+        padding: 20% 0;
+        padding-top: 20px;
+        height: 600px;
+    }
+
+    .main_child{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 770px){
+    header ul{
+        display: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+    header i{
+        display: block;
+    }
+}
+
+@media (max-width: 648px){
+    .footer_top ul{
+        gap: 50px;
+    }
+}
+
+@media (max-width: 610px){
+    .hero_left h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 590px){
+    section input{
+        width: 350px;
+    }
+}
+
+@media (max-width: 570px){
+    .footer_top ul{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 535px){
+    section input{
+        width: 300px;
+    }
+
+    .footer_top ul{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .footer_top ul{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 526px){
+    .hero_left h1{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px){
+    section input{
+        width: 250px;
+    }
+}
+
+@media (max-width: 467px){
+    .footer_top ul{
+        gap: 10px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    section input{
+        width: 200px;
+    }
+}
+
+@media (max-width: 474px){
+    .hero_left h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 435px){
+    .hero_left h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 370px){
+    .hero_left h1{
+        font-size: 30px;
+    }
+}
+
+/* ==============Media End================ */
